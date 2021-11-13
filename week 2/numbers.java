@@ -8,9 +8,10 @@ public class numbers {
         System.out.print("Enter two numbers: ");
         int numberOne = in.nextInt();
         int numberTwo = in.nextInt();
-       //  System.out.println("Enter two numbers: ");
+		
         System.out.print("The sum of these two numbers: ");
         System.out.println(numberOne + numberTwo);
+		
         System.out.print("The product of these two numbers: ");
         System.out.println(numberOne * numberTwo);
         
