@@ -28,7 +28,6 @@ public class indexOfMax {
 				indexOfLargestNum = i;
 		}
 	}
-		
 	return indexOfLargestNum;
 	}
 }
