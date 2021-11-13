@@ -17,7 +17,7 @@ public class focalLengthOfCamera {
         
         // Calculating focal length of camera
         double focalLength = reciprocal(1 / dO + 1 / dI);
-        System.out.printf("The focal length is %.2f mm.",focalLength);
+        System.out.printf("The focal length is %.2f mm." , focalLength);
     }
     
     public static double reciprocal(double x) {
