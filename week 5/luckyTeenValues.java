@@ -11,8 +11,7 @@ public class luckyTeenValues {
 		System.out.print("Enter a second number: ");
 		int b = in.nextInt();
 		 
-		System.out.print("The sum is: " + (teenSu);
-		System.out.print(teenSum(a, b));
+		System.out.print("The sum is: " + (teenSum(a, b)));
 	}
 
 	public static int teenSum (int a, int b) {
