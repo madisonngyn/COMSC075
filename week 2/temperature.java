@@ -7,8 +7,9 @@ public class temperature {
         
         System.out.println("Enter a temperature in celsius: ");
         double celsius = in.nextDouble();
-        double fahrenheit = (celsius * 9/5 + 32);
         
+	// converting to fahrenheit
+	double fahrenheit = (celsius * 9/5 + 32);
         System.out.printf(" %.1f C = %.1f F" , celsius, fahrenheit);
         
 	}
