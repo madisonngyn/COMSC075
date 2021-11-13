@@ -3,11 +3,11 @@ public class focalLengthOfCamera {
     public static void main(String[] args) {
         java.util.Scanner input = new java.util.Scanner(System.in);
         
-        // Asking user for distance from object to lens in meters
+        // Asking user for distance from object to lens (in meters)
         System.out.println("Enter the distance from the object to the lens in meters: "); 
         double distanceToObject = input.nextDouble();
     
-        // Asking user for distance from lens to image sensor in centimeters
+        // Asking user for distance from lens to image sensor (in centimeters)
         System.out.println("Enter the distance from the lens to the image sensor in centimeters: ");
         double distanceToImageSensor = input.nextDouble();
         
