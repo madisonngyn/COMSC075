@@ -17,7 +17,6 @@ public class Staircase {
 		// calculating the number of blocks needed for the staircase
 		int sumBlocks = (((numberOfSteps) * ((numberOfSteps) + 1)) / 2);
 	
-		// calculating the volume of each block
 		System.out.print("Enter step width in cm: ");
 		double stepWidth = in.nextDouble();
 		
@@ -27,6 +26,7 @@ public class Staircase {
 		System.out.print("Enter step run in cm: ");
 		double stepRun = in.nextDouble();
 		
+		// calculating the volume of each block
 		double volumeOfBlock = (stepWidth * stepRise * stepRun);
 		
 		// calclating the total volume of the blocks
