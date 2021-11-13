@@ -1,6 +1,6 @@
 // Madison Nguyen
 // September 16th, 2021
-// This program is used the calculate the number of cubic centimeters of concrete needed to build a staircase by using input of the staircase's rise, run, and width from the user.
+// This program is used the calculate the number of cubic centimeters of concrete needed to build a staircase by taking user input of the staircase's rise, run, and width.
 
 import java.util.Scanner;
 
@@ -32,10 +32,7 @@ public class Staircase {
 		// calclating the total volume of the blocks
 		double totalVolumeOfBlocks = (sumBlocks * (stepWidth * stepRise * stepRun));
 		int totalVolumeOfBlocksRounded = (int) (totalVolumeOfBlocks + 0.5);
-		System.out.print("Total volume is ");
-		System.out.print(totalVolumeOfBlocksRounded);	
-		System.out.print(" cubic centimeters");
-		
+		System.out.print("Total volume is " + totalVolumeOfBlocksRounded) + " cubic centimeters");
 	}
 }
 
