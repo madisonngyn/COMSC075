@@ -1,22 +1,24 @@
 import java.util.Scanner;
 
 public class indexOfMax {
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+      
+		int arrayLength;
+		System.out.println("Enter array length: ");
+		arrayLength = in.nextInt();
+		int[] array = new int[arrayLength];
         
-        int arrayLength;
-        System.out.println("Enter array length: ");
-        arrayLength = in.nextInt();
-        int[] array = new int[arrayLength];
-        
-        for (int arrayNumbers = 0; arrayNumbers < arrayLength; arrayNumbers++) {
+		for (int arrayNumbers = 0; arrayNumbers < arrayLength; arrayNumbers++) {
 			System.out.println("Enter number " + (arrayNumbers+1));
 			array[arrayNumbers] = in.nextInt();
-        }
+		}
+		
 		getIndexOfLargest(array);
 		System.out.println("The index of the largest number is " + getIndexOfLargest(array));
-    }
-    public static int getIndexOfLargest(int[] array ) {
+	}
+	
+	public static int getIndexOfLargest(int[] array ) {
 		int largestNum = array[0];
 		int indexOfLargestNum = 0;
 		
@@ -24,8 +26,9 @@ public class indexOfMax {
 			if (array[i] > largestNum) { 
 				largestNum = array[i];
 				indexOfLargestNum = i;
-			}
 		}
+	}
+		
 	return indexOfLargestNum;
 	}
 }
