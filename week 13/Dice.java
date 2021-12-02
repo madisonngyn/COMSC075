@@ -20,31 +20,31 @@ public class Dice {
 		int[][] rolls = new int[6][6];
 		Random random = new Random();
 		for (int i = 0; i < nRolls; i++) {
-            int dice1 = random.nextInt(6);
-            int dice2 = random.nextInt(6);
-            rolls[dice1][dice2] = rolls[dice1][dice2] + 1;
-        }
+            		int dice1 = random.nextInt(6);
+            		int dice2 = random.nextInt(6);
+            		rolls[dice1][dice2] = rolls[dice1][dice2] + 1;
+        	}
         return rolls;
-   }
+   	}
 
-public static void printRolls(int[][] rolls) {
-        int[] diceSides = {1, 2, 3, 4, 5, 6};
-        System.out.print("\n");
-        System.out.println("Frequencies for individual dice");
-        System.out.print("   ");
-        for (int i = 0; i < diceSides.length; i++) {
-            System.out.printf("%4d ",diceSides[i]);
-        }
-        System.out.print("\n   ------------------------------");
-        System.out.print("\n");
-        for (int rows = 0; rows < 6; rows++) {
-            System.out.print(diceSides[rows] + "| ");
-            for (int column = 0; column < 6; column++) {
-                System.out.printf("%4d ", rolls[rows][column]);
-            }
-            System.out.println();
-        }
-    }
+	public static void printRolls(int[][] rolls) {
+        	int[] diceSides = {1, 2, 3, 4, 5, 6};
+        	System.out.print("\n");
+        	System.out.println("Frequencies for individual dice");
+        	System.out.print("   ");
+        	for (int i = 0; i < diceSides.length; i++) {
+            		System.out.printf("%4d ",diceSides[i]);
+        	}
+        	System.out.print("\n   ------------------------------");
+        	System.out.print("\n");
+        	for (int rows = 0; rows < 6; rows++) {
+            		System.out.print(diceSides[rows] + "| ");
+            		for (int column = 0; column < 6; column++) {
+                		System.out.printf("%4d ", rolls[rows][column]);
+            		}
+            	System.out.println();
+        	}
+    	}
 
 	public static int[] calcFrequencies(int[][] rolls) { 
 		int totals[] = new int[11];
@@ -67,9 +67,9 @@ public static void printRolls(int[][] rolls) {
 		System.out.println("Frequencies of totals");
 		for (int i = 0; i < totals.length; i++) {
 			System.out.print((i + 2) + "| ");
-            System.out.print(totals[i]);
-            System.out.print("\n");
-        }
-   }
+            		System.out.print(totals[i]);
+            		System.out.print("\n");
+        	}
+   	}
 }
 
