@@ -6,10 +6,10 @@ public class studentScores {
 	
 	public static void main (String[] args) {
 		int[][] examScores = {{98, 88, 76, 56, 100}, 
-							  {87, 67, 89, 100, 87}, 
-							  {87, 98, 88, 99, 96}, 
-							  {87, 88, 92, 87, 67}, 
-							  {100, 100, 89, 87, 78}};
+				      {87, 67, 89, 100, 87}, 
+				      {87, 98, 88, 99, 96}, 
+				      {87, 88, 92, 87, 67}, 
+				      {100, 100, 89, 87, 78}};
 		
 		// Using for loops, show me how you would find the highest score for exam 3. Which student got that score?
 		int topScorer = 0;
